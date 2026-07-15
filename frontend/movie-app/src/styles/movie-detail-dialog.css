@@ -1,0 +1,451 @@
+/**
+ * 影片详情弹窗：亚克力磨砂（半透明 + backdrop 模糊），亮度适中、偏冷紫灰
+ */
+
+.el-dialog.detail-dialog {
+  --detail-poster-col: 288px;
+  --detail-poster-vpad: 14px;
+  --detail-poster-inner-w: calc(var(--detail-poster-col) - var(--detail-poster-vpad) - 2px);
+  --detail-poster-block-h: calc(var(--detail-poster-inner-w) * 3 / 2 + var(--detail-poster-vpad));
+  --detail-dialog-outer-radius: 24px;
+  --detail-dialog-pad: 5px;
+  --detail-inner-bottom-radius: calc(var(--detail-dialog-outer-radius) - var(--detail-dialog-pad));
+
+  --detail-acrylic-blur: blur(40px) saturate(1.35);
+  --detail-acrylic-blur-soft: blur(22px) saturate(1.2);
+  --detail-shell-bg: linear-gradient(
+    168deg,
+    rgba(230, 234, 248, 0.5) 0%,
+    rgba(216, 224, 244, 0.42) 55%,
+    rgba(208, 218, 240, 0.38) 100%
+  );
+  --detail-body-grad: linear-gradient(
+    168deg,
+    rgba(220, 228, 246, 0.28) 0%,
+    rgba(212, 222, 242, 0.22) 50%,
+    rgba(206, 218, 238, 0.2) 100%
+  );
+  --detail-right-panel-grad: var(--detail-shell-bg);
+  --detail-overview-bg: rgba(228, 234, 246, 0.42);
+  --detail-overview-border: rgba(255, 255, 255, 0.38);
+  --detail-table-label-bg: rgba(200, 214, 238, 0.52);
+  --detail-table-content-bg: rgba(218, 228, 246, 0.58);
+  --detail-right-text: #1e293b;
+  --detail-right-text-muted: #64748b;
+  --detail-right-font: 14px;
+  --detail-overview-font: 15px;
+  --detail-table-outer-radius: 8px;
+
+  border-radius: var(--detail-dialog-outer-radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 28px 72px rgba(15, 23, 42, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: var(--detail-shell-bg);
+  backdrop-filter: var(--detail-acrylic-blur);
+  -webkit-backdrop-filter: var(--detail-acrylic-blur);
+  padding: 5px;
+  --el-dialog-padding-primary: 4px;
+}
+
+.el-dialog.detail-dialog .el-dialog__header {
+  margin: 0;
+  padding: 12px 6px 12px;
+  background: transparent;
+}
+
+/* 顶栏：二层亚克力，略压亮度 */
+.el-dialog.detail-dialog .dlg-head {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 18px 20px;
+  border-radius: 20px;
+  color: #0f172a;
+  background: linear-gradient(
+    145deg,
+    rgba(248, 246, 255, 0.52) 0%,
+    rgba(232, 236, 252, 0.46) 45%,
+    rgba(224, 232, 248, 0.42) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 8px 28px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  backdrop-filter: var(--detail-acrylic-blur-soft);
+  -webkit-backdrop-filter: var(--detail-acrylic-blur-soft);
+}
+
+.el-dialog.detail-dialog .dlg-head::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 120% 80% at 0% 0%, rgba(129, 140, 248, 0.14), transparent 52%),
+    radial-gradient(ellipse 100% 70% at 100% 12%, rgba(167, 139, 250, 0.1), transparent 48%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(99, 102, 241, 0.07), transparent 55%);
+  pointer-events: none;
+}
+
+.el-dialog.detail-dialog .dlg-head-title,
+.el-dialog.detail-dialog .dlg-close {
+  position: relative;
+  z-index: 1;
+}
+
+.el-dialog.detail-dialog .dlg-h1 {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.22;
+  color: #0f172a;
+  text-shadow: none;
+}
+
+.el-dialog.detail-dialog .dlg-hmeta {
+  margin-top: 12px;
+}
+
+.el-dialog.detail-dialog .dlg-hmeta .pill {
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(148, 163, 184, 0.4);
+  color: #475569;
+  backdrop-filter: blur(12px) saturate(1.1);
+  -webkit-backdrop-filter: blur(12px) saturate(1.1);
+}
+
+.el-dialog.detail-dialog .dlg-hmeta .pill.score {
+  background: rgba(254, 243, 199, 0.95);
+  border-color: rgba(251, 191, 36, 0.45);
+  color: #b45309;
+}
+
+.el-dialog.detail-dialog .dlg-close {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.38);
+  color: #64748b;
+  width: 40px;
+  height: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.el-dialog.detail-dialog .dlg-close:hover {
+  background: rgba(245, 243, 255, 0.55);
+  border-color: rgba(129, 140, 248, 0.4);
+  color: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.el-dialog.detail-dialog .el-dialog__body {
+  padding: 16px 16px 10px;
+  color: #334155;
+  background:
+    radial-gradient(ellipse 95% 65% at 50% -8%, rgba(99, 102, 241, 0.08), transparent 58%),
+    var(--detail-body-grad);
+  border-top: none;
+}
+
+.el-dialog.detail-dialog .dlg {
+  padding: 6px 0 10px;
+}
+
+.el-dialog.detail-dialog .dlg-row {
+  display: grid;
+  grid-template-columns: var(--detail-poster-col) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.el-dialog.detail-dialog .dlg-left {
+  padding: 6px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  box-shadow:
+    0 4px 18px rgba(15, 23, 42, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px) saturate(1.15);
+  -webkit-backdrop-filter: blur(16px) saturate(1.15);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.el-dialog.detail-dialog .dlg-right {
+  min-height: var(--detail-poster-block-h);
+  max-height: var(--detail-poster-block-h);
+  height: var(--detail-poster-block-h);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--detail-right-panel-grad);
+  border-radius: 18px;
+  padding: 18px 20px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 4px 20px rgba(15, 23, 42, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  backdrop-filter: var(--detail-acrylic-blur);
+  -webkit-backdrop-filter: var(--detail-acrylic-blur);
+  color: var(--detail-right-text);
+  font-size: var(--detail-right-font);
+  line-height: 1.65;
+  scrollbar-color: rgba(100, 116, 139, 0.38) rgba(228, 234, 246, 0.45);
+  scrollbar-width: thin;
+}
+
+.el-dialog.detail-dialog .dlg-right::-webkit-scrollbar {
+  width: 8px;
+}
+
+.el-dialog.detail-dialog .dlg-right::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 999px;
+}
+
+.el-dialog.detail-dialog .dlg-right::-webkit-scrollbar-track {
+  background: rgba(228, 234, 246, 0.42);
+  border-radius: 999px;
+}
+
+.el-dialog.detail-dialog .dlg-right .dlg-overview {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--detail-overview-border);
+  background: var(--detail-overview-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px) saturate(1.1);
+  -webkit-backdrop-filter: blur(12px) saturate(1.1);
+  color: var(--detail-right-text);
+  line-height: 1.7;
+  font-size: var(--detail-overview-font);
+}
+
+/* 详情弹窗内的“灰字”统一对比度（避免过浅看不清） */
+.el-dialog.detail-dialog .muted {
+  color: #475569 !important;
+}
+
+.el-dialog.detail-dialog .dlg:not(.dlg-row) {
+  background: var(--detail-right-panel-grad);
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin: 4px 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: var(--detail-acrylic-blur);
+  -webkit-backdrop-filter: var(--detail-acrylic-blur);
+  color: var(--detail-right-text);
+  font-size: var(--detail-right-font);
+}
+
+/* 属性表整块圆角（避免四角直角戳出） */
+.el-dialog.detail-dialog .dlg-right .el-descriptions,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) .el-descriptions {
+  border-radius: var(--detail-table-outer-radius);
+  overflow: hidden;
+}
+
+.el-dialog.detail-dialog .dlg-right .el-descriptions__body,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) .el-descriptions__body {
+  border-radius: var(--detail-table-outer-radius);
+  overflow: hidden;
+}
+
+/* 覆盖 EP 默认近白填充（含 td 上的 background-color） */
+.el-dialog.detail-dialog .dlg-right .el-descriptions__label,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) .el-descriptions__label {
+  color: #334155 !important;
+  font-weight: 700 !important;
+  background: var(--detail-table-label-bg) !important;
+  background-color: var(--detail-table-label-bg) !important;
+  border-color: rgba(148, 163, 184, 0.38) !important;
+  font-size: var(--detail-right-font) !important;
+}
+
+.el-dialog.detail-dialog .dlg-right .el-descriptions__content,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) .el-descriptions__content {
+  color: #0f172a !important;
+  background: var(--detail-table-content-bg) !important;
+  background-color: var(--detail-table-content-bg) !important;
+  border-color: rgba(180, 198, 224, 0.45) !important;
+  font-size: var(--detail-right-font) !important;
+}
+
+.el-dialog.detail-dialog .dlg-right td.el-descriptions__cell.el-descriptions__content,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) td.el-descriptions__cell.el-descriptions__content {
+  background: var(--detail-table-content-bg) !important;
+  background-color: var(--detail-table-content-bg) !important;
+}
+
+.el-dialog.detail-dialog .dlg-right td.el-descriptions__cell.el-descriptions__label,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) td.el-descriptions__cell.el-descriptions__label {
+  background: var(--detail-table-label-bg) !important;
+  background-color: var(--detail-table-label-bg) !important;
+}
+
+.el-dialog.detail-dialog .dlg-right .el-descriptions__table,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) .el-descriptions__table {
+  border-color: rgba(180, 198, 224, 0.5) !important;
+  background: transparent !important;
+}
+
+.el-dialog.detail-dialog .dlg-right .el-descriptions__cell,
+.el-dialog.detail-dialog .dlg:not(.dlg-row) .el-descriptions__cell {
+  border-color: rgba(180, 198, 224, 0.45) !important;
+}
+
+.el-dialog.detail-dialog .dlg-desc {
+  margin-top: 14px;
+}
+
+.el-dialog.detail-dialog .dlg-poster {
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+  background: rgba(226, 232, 240, 0.75);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.el-dialog.detail-dialog .dlg-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.el-dialog.detail-dialog .dlg-ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 3;
+  border-radius: 14px;
+  border: 1px dashed rgba(148, 163, 184, 0.45);
+  background: rgba(241, 245, 249, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #64748b;
+  font-size: 13px;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer {
+  padding: 16px 16px 16px;
+  background: var(--detail-shell-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  backdrop-filter: var(--detail-acrylic-blur);
+  -webkit-backdrop-filter: var(--detail-acrylic-blur);
+  border-bottom-left-radius: var(--detail-inner-bottom-radius);
+  border-bottom-right-radius: var(--detail-inner-bottom-radius);
+  overflow: hidden;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button {
+  border-radius: 999px;
+  font-weight: 650;
+  padding: 10px 18px;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--default {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(148, 163, 184, 0.45);
+  color: #334155;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--default:hover {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #7c3aed 100%);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--primary:hover {
+  background: linear-gradient(135deg, #6366f1 0%, #7c3aed 55%, #8b5cf6 100%);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--success {
+  border-color: rgba(5, 150, 105, 0.4);
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--success:hover {
+  background: rgba(16, 185, 129, 0.2);
+  color: #065f46;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--warning {
+  border-color: rgba(217, 119, 6, 0.4);
+  background: rgba(245, 158, 11, 0.12);
+  color: #b45309;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--warning:hover {
+  background: rgba(245, 158, 11, 0.2);
+  color: #92400e;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--danger {
+  border-color: rgba(220, 38, 38, 0.35);
+  background: rgba(239, 68, 68, 0.08);
+  color: #b91c1c;
+}
+
+.el-dialog.detail-dialog .el-dialog__footer .el-button--danger:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: #991b1b;
+}
+
+.el-dialog.detail-dialog .el-empty__description {
+  color: #64748b;
+}
+
+.el-dialog.detail-dialog .el-empty {
+  --el-empty-fill-color-0: rgba(99, 102, 241, 0.2);
+  --el-empty-fill-color-1: rgba(148, 163, 184, 0.35);
+}
+
+.el-dialog.detail-dialog .no-detail {
+  padding: 28px 16px;
+  border-radius: 18px;
+  background: var(--detail-overview-bg);
+  border: 1px solid var(--detail-overview-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(1.08);
+  -webkit-backdrop-filter: blur(10px) saturate(1.08);
+  color: var(--detail-right-text-muted);
+  font-size: var(--detail-right-font);
+}
+
+@media (max-width: 860px) {
+  .el-dialog.detail-dialog .dlg-row {
+    grid-template-columns: 1fr;
+  }
+
+  .el-dialog.detail-dialog .dlg-right {
+    min-height: 0;
+    max-height: none;
+    height: auto;
+  }
+}

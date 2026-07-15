@@ -1,0 +1,164 @@
+<mxfile host="65bd71144e">
+    <diagram id="9tQaOzYjDaTv3OU_ZHV-" name="第 1 页">
+        <mxGraphModel dx="1117" dy="779" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1000" pageHeight="820" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="MovieHub 系统流程图" style="text;html=1;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="25" width="380" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="A" value="用户访问系统" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="85" width="180" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="B" value="是否已登录" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="165" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="C" value="登录/注册" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="182.5" width="150" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="D" value="保存登录状态" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="300" width="150" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="E" value="进入系统主页" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="300" width="180" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="F" value="首页影片发现" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="80" y="420" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="G" value="片库浏览与搜索" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="255" y="420" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="H" value="智能推荐" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="420" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="I" value="片单管理" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="590" y="420" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="J" value="影评社区" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="780" y="420" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="K" value="消息中心" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="170" y="530" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="R" value="是否管理员" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="500" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="L" value="管理后台" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="858" y="515" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="M" value="读取收藏、已看、浏览、反馈" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="405" y="527.5" width="190" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="N" value="KG/RAG/TMDB 多源召回" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="405" y="620" width="190" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="O" value="合并排序与大模型定榜" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="670" y="620" width="190" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="P" value="返回推荐列表与解释" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="670" y="725" width="190" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q" value="写入推荐日志与通知" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" parent="1" vertex="1">
+                    <mxGeometry x="405" y="725" width="190" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="eAB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="A" target="B" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eBC" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontStyle=0;" parent="1" source="B" target="C" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eCD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="C" target="D" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="270" y="260"/>
+                            <mxPoint x="270" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eBE" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontStyle=0;" parent="1" source="B" target="E" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eDE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="D" target="E" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eEF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="F" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="390"/>
+                            <mxPoint x="150" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eEG" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="G" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="390"/>
+                            <mxPoint x="330" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eEH" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="H" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eEI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="I" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="390"/>
+                            <mxPoint x="670" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eEJ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="J" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="390"/>
+                            <mxPoint x="850" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eEK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="K" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="390"/>
+                            <mxPoint x="230" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eER" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="E" target="R" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="390"/>
+                            <mxPoint x="750" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eRL" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontStyle=0;" parent="1" source="R" target="L" edge="1">
+                    <mxGeometry x="-0.3333" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eHM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="H" target="M" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eMN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="M" target="N" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eNO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontStyle=0;fontSize=16;" parent="1" source="N" target="O" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eOP" value="结果展示" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontStyle=0" parent="1" source="O" target="P" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eOQ" value="结果沉淀" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontStyle=0" parent="1" source="O" target="Q" edge="1">
+                    <mxGeometry x="0.169" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="712" y="695"/>
+                            <mxPoint x="502" y="695"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

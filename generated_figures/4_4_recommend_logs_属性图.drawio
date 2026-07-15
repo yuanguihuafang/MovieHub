@@ -1,0 +1,67 @@
+<mxfile host="65bd71144e">
+    <diagram name="推荐日志属性图" id="attr-4_4_recommend_logs">
+        <mxGraphModel dx="926" dy="766" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="800" pageHeight="640" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ent" value="推荐日志" style="rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;fontStyle=1;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="290" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="a0" value="ID" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;fontStyle=4" parent="1" vertex="1">
+                    <mxGeometry x="345" y="157" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" value="用户编号" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="509" y="172" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2" value="用户输入" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="253" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3" value="知识图谱候选" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="575" y="350" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4" value="RAG候选" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="420" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5" value="最终推荐影片" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="242" y="420" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a6" value="推荐说明" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="113" y="346" width="122" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a7" value="耗时" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="245" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a8" value="创建时间" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="172" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="e0" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

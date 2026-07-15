@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram name="浏览历史属性图" id="attr-4_3_browse_history">
+        <mxGraphModel dx="926" dy="766" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="800" pageHeight="640" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ent" value="浏览历史" style="rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;fontStyle=1;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="290" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="a0" value="ID" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;fontStyle=4" parent="1" vertex="1">
+                    <mxGeometry x="345" y="150" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" value="用户编号" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="535" y="205" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2" value="影片名称" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="535" y="375" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3" value="影片类型" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="430" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4" value="浏览次数" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="154" y="375" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5" value="浏览时间" style="ellipse;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="154" y="205" width="110" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="e0" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" style="endArrow=none;html=1;strokeColor=#000000;fontSize=16;" parent="1" source="ent" target="a5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

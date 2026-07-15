@@ -1,0 +1,295 @@
+<mxfile host="65bd71144e">
+    <diagram id="YXkDW1OVL8GTSMXNEdM2" name="第 1 页">
+        <mxGraphModel dx="1996" dy="1113" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1200" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="user" value="用户" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="270" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="movie" value="电影" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="775" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="state" value="用户电影状态" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="276" y="530" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="history" value="浏览历史" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="528" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="recommend" value="推荐记录" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-60" y="212.5" width="145" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="notice" value="用户通知" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-60" y="103" width="145" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="playlist" value="片单" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-70" y="386" width="145" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="playlist_item" value="片单明细" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-70" y="625" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="review" value="影评" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="676" y="502" width="145" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="comment" value="评论" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="866.5" y="311" width="145" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_state" value="记录" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="316" y="412" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_state_movie" value="对应" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="316" y="651" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_history" value="产生" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="503" y="401" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_history_movie" value="访问" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="503" y="706" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_rec" value="生成" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="202" y="217.5" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_notice" value="接收" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="202" y="108" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_playlist" value="创建" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="202" y="391" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_playlist_item" value="包含" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-35" y="517" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_item_movie" value="收录" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-35" y="787" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_review" value="发表" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="272.5" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_review_movie" value="评价" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="713.5" y="775" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_review_comment" value="拥有" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="904" y="507" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_user_like" value="发起" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="394" y="108" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_like_target" value="作用于" style="shape=rhombus;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="711" y="307" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_state" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="394"/>
+                            <mxPoint x="350" y="394"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e2" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_state" target="state" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="408" y="588"/>
+                            <mxPoint x="408" y="588"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="movie" target="r_state_movie" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="351" y="741"/>
+                            <mxPoint x="351" y="741"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_state_movie" target="state" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_history" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="418" y="433"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_history" target="history" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="545" y="432"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="movie" target="r_history_movie" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="426" y="734"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e8" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_history_movie" target="history" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="540" y="690"/>
+                            <mxPoint x="540" y="690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e9" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_rec" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="237" y="293"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e10" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_rec" target="recommend" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_notice" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="351" y="136"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e12" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_notice" target="notice" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_playlist" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="238" y="328"/>
+                            <mxPoint x="238" y="348"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e14" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_playlist" target="playlist" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e15" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="playlist" target="r_playlist_item" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e16" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_playlist_item" target="playlist_item" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint y="599"/>
+                            <mxPoint x="-1" y="599"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e17" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="playlist_item" target="r_item_movie" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="11" y="835"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e18" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_item_movie" target="movie" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="11" y="810"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e19" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_review" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="665" y="309"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e20" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_review" target="review" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="645" y="534"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e21" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="review" target="r_review_movie" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="748" y="753"/>
+                            <mxPoint x="748" y="753"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e22" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_review_movie" target="movie" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="748" y="810"/>
+                            <mxPoint x="748" y="810"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e23" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="review" target="r_review_comment" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="854" y="535"/>
+                            <mxPoint x="854" y="535"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e24" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_review_comment" target="comment" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="939" y="410"/>
+                            <mxPoint x="939" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e25" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="user" target="r_user_like" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="428" y="236"/>
+                            <mxPoint x="428" y="236"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e26" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_user_like" target="like" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="682" y="136"/>
+                            <mxPoint x="682" y="136"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e27" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="like" target="r_like_target" edge="1">
+                    <mxGeometry x="0.0021" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="746" y="200"/>
+                            <mxPoint x="746" y="200"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e28" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;fontSize=20;fontStyle=1;" parent="1" source="r_like_target" target="review" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="746" y="478"/>
+                            <mxPoint x="746" y="478"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e29" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;dashed=1;fontSize=20;fontStyle=1;" parent="1" source="like" target="comment" edge="1">
+                    <mxGeometry x="0.136" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1020" y="136"/>
+                            <mxPoint x="1020" y="334"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e30" value="回复" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;dashed=1;fontSize=20;fontStyle=1;" parent="1" source="comment" target="comment" edge="1">
+                    <mxGeometry x="-0.2473" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="950" y="256"/>
+                            <mxPoint x="819" y="256"/>
+                            <mxPoint x="819" y="344"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="like" value="点赞" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="673.5" y="103" width="145" height="65" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

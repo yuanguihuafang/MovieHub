@@ -1,0 +1,31 @@
+{
+  "title": "知识图谱链接预测（DB15K · 测试集）",
+  "source": "MMKG_item/log/log_new.txt · Test set（Epoch 2000）",
+  "task": "尾实体预测（过滤已知三元组）",
+  "notes": [
+    "本文件作为前端/演示/README 的统一展示口径（single source of truth）。",
+    "数值范围约定：Hits@K ∈ [0,1]（前端会显示为百分比），MR/MRR 为原始数值。"
+  ],
+  "metrics": {
+    "Hits@1": 0.2715,
+    "Hits@3": 0.384,
+    "Hits@10": 0.4866,
+    "Hits@100": 0.6233,
+    "MR": 957.7758,
+    "MRR": 0.3449
+  },
+  "baselines": [
+    {
+      "name": "TransE（单模态）",
+      "Hits@1": 0.1245,
+      "Hits@3": 0.313,
+      "note": "对比基线"
+    },
+    {
+      "name": "IKRL（多模态）",
+      "Hits@1": 0.1375,
+      "Hits@3": 0.347,
+      "note": "对比基线"
+    }
+  ]
+}

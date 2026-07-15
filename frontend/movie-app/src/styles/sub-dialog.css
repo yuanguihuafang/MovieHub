@@ -1,0 +1,74 @@
+/**
+ * 与首页/片库影片详情弹窗一致的二级弹窗（想看、看过记录等，teleport 到 body）
+ */
+.detail-dialog.sub-detail-dialog {
+  /* 复用详情弹窗亚克力风格，但更紧凑 */
+  --detail-dialog-outer-radius: 20px;
+  --detail-dialog-pad: 4px;
+  padding: var(--detail-dialog-pad);
+}
+
+.detail-dialog.sub-detail-dialog .el-dialog__body {
+  padding: 14px 14px 0;
+  color: var(--detail-right-text);
+}
+
+.detail-dialog.sub-detail-dialog .el-dialog__footer {
+  padding: 12px 14px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.detail-dialog.sub-detail-dialog .dlg-h1 {
+  font-size: 18px;
+}
+
+.detail-dialog.sub-detail-dialog .dlg-hmeta {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* 二级弹窗 meta pill：不要白底块，改为轻描边 */
+.detail-dialog.sub-detail-dialog .dlg-hmeta .pill {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: rgba(148, 163, 184, 0.38) !important;
+  color: #334155 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 二级弹窗标题栏：关闭按钮固定到右上角 */
+.detail-dialog.sub-detail-dialog .dlg-head {
+  position: relative;
+  padding-right: 56px; /* 给右上角关闭按钮留空间 */
+}
+
+.detail-dialog.sub-detail-dialog .dlg-close {
+  position: absolute !important;
+  top: 14px;
+  right: 14px;
+  margin: 0 !important;
+}
+
+/* 表单字段：跟随详情弹窗色系，避免暗色低对比 */
+.detail-dialog.sub-detail-dialog .wr-film {
+  color: var(--detail-right-text);
+}
+
+.detail-dialog.sub-detail-dialog .wr-label,
+.detail-dialog.sub-detail-dialog .wr-rate-hint {
+  color: var(--detail-right-text-muted);
+}
+
+/* 加到片单弹窗：灰字加深，避免看不清 */
+.detail-dialog.sub-detail-dialog .add-pl-hint,
+.detail-dialog.sub-detail-dialog .add-pl-field-label {
+  color: #475569 !important;
+}

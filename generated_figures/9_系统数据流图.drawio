@@ -1,0 +1,202 @@
+<mxfile host="65bd71144e">
+    <diagram id="TN2HY0Q5FBlBvU0KNCf9" name="第 1 页">
+        <mxGraphModel dx="1858" dy="806" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="760" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="MovieHub系统数据流图" style="text;html=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="20" width="400" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="用户" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="-2" y="162" width="90" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="外部数据源&lt;br&gt;(TMDB/豆瓣)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="28" y="579" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="外部服务&lt;br&gt;大模型(LLM)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fontSize=16;fontStyle=0;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="989" y="339.5" width="110" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="1.0&lt;br&gt;行为记录" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="227.5" y="162" width="127" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="2.0&lt;br&gt;偏好分解" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="228" y="336" width="129" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="3.0&lt;br&gt;KG链接预测召回" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="491" y="210" width="135" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="4.0&lt;br&gt;RAG向量语义召回" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="488.5" y="336" width="135" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="5.0&lt;br&gt;TMDB外部候选" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="488.5" y="432" width="135" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="6.0&lt;br&gt;合并排序与定榜" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="763" y="336" width="130" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="7.0&lt;br&gt;数据导入与向量化" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=0;spacing=4;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="323" y="570" width="135" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="D1 用户行为状态表" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fontSize=16;fontStyle=0;spacing=6;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="216" y="257" width="150" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="D2 知识图谱" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fontSize=16;fontStyle=0;spacing=6;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="491" y="104" width="130" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="D3 向量库" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fontSize=16;fontStyle=0;spacing=6;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="763" y="538" width="149" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="D4 推荐日志" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fontSize=16;fontStyle=0;spacing=6;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="763" y="442" width="148" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="D5 影片基础数据" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fontSize=16;fontStyle=0;spacing=6;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+                    <mxGeometry x="763" y="594" width="150" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="浏览/收藏/反馈" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.25;entryX=0;entryY=0.5;fontStyle=0" edge="1" parent="1" source="68" target="71">
+                    <mxGeometry x="-0.0131" y="15" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="156" y="190"/>
+                            <mxPoint x="185" y="190"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="写入行为" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontStyle=0" edge="1" parent="1" source="71" target="78">
+                    <mxGeometry x="-0.25" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="291" y="241"/>
+                            <mxPoint x="291" y="241"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="历史行为" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontStyle=0" edge="1" parent="1" source="78" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="自然语言偏好" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;fontStyle=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="68" target="72">
+                    <mxGeometry x="-0.3609" relative="1" as="geometry">
+                        <mxPoint x="218" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="111" y="364"/>
+                            <mxPoint x="184" y="364"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="种子实体" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=0;" edge="1" parent="1" target="73">
+                    <mxGeometry x="0.1348" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="438" y="341"/>
+                            <mxPoint x="438" y="237"/>
+                        </Array>
+                        <mxPoint x="357" y="341" as="sourcePoint"/>
+                        <mxPoint x="488.5" y="217.49" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="语义查询" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontStyle=0" edge="1" parent="1" source="72" target="74">
+                    <mxGeometry x="0.2772" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="427" y="363"/>
+                            <mxPoint x="488" y="364"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="补充请求" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;entryX=0;entryY=0.5;fontStyle=0;exitX=0.456;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="72" target="75">
+                    <mxGeometry x="-0.1855" y="2" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="287" y="460"/>
+                            <mxPoint x="441" y="460"/>
+                        </Array>
+                        <mxPoint x="366" y="384" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="三元组" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontStyle=0" edge="1" parent="1" source="79" target="73">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="相似文档" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0;exitY=0.25;entryX=0.5;entryY=1;fontStyle=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="80" target="74">
+                    <mxGeometry x="-0.3027" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="731" y="547"/>
+                            <mxPoint x="642" y="546"/>
+                            <mxPoint x="642" y="409"/>
+                            <mxPoint x="556" y="409"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" value="KG候选集" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.25;fontStyle=0" edge="1" parent="1" source="73" target="76">
+                    <mxGeometry x="-0.1056" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="682" y="238"/>
+                            <mxPoint x="682" y="350"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="RAG候选集" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontStyle=0" edge="1" parent="1" source="74" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="TMDB候选" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.75;fontStyle=0" edge="1" parent="1" source="75" target="76">
+                    <mxGeometry x="-0.0812" y="-8" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="624" y="465"/>
+                            <mxPoint x="681" y="465"/>
+                            <mxPoint x="681" y="377"/>
+                            <mxPoint x="760" y="377"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="审核请求" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.35;entryX=0;entryY=0.35;fontStyle=0" edge="1" parent="1" source="76" target="70">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="定榜结果" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;dashed=1;exitX=0;exitY=0.7;entryX=1;entryY=0.7;fontStyle=0" edge="1" parent="1" source="70" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="写入日志" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontStyle=0" edge="1" parent="1" source="76" target="81">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="推荐列表与理由" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=0;entryX=0.5;entryY=0;fontStyle=0" edge="1" parent="1" source="76" target="68">
+                    <mxGeometry x="0.3418" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="786" y="90"/>
+                            <mxPoint x="96" y="90"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="99" value="电影原始数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontStyle=0" edge="1" parent="1" source="69" target="77">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="实体三元组" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;exitX=0.5;exitY=0;entryX=0;entryY=0.5;exitDx=0;exitDy=0;fontStyle=0" edge="1" parent="1" source="77" target="79">
+                    <mxGeometry x="0.4204" y="-13" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="392" y="571"/>
+                            <mxPoint x="392" y="122"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" value="文本向量" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;entryX=0;entryY=0.75;fontStyle=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="77" target="80">
+                    <mxGeometry x="-0.121" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="728" y="584"/>
+                            <mxPoint x="728" y="564"/>
+                        </Array>
+                        <mxPoint x="384" y="580" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" value="影片信息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=16;fontFamily=Microsoft YaHei;entryX=0;entryY=0.5;fontStyle=0;exitX=1;exitY=0.845;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="77" target="82">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="384" y="617" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

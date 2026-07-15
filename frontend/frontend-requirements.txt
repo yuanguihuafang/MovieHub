@@ -1,0 +1,17 @@
+# 前端依赖（Vue 3 项目）
+# 请在前端目录下运行: cd frontend/movie-app && npm install
+
+# Element Plus UI 库
+element-plus@^2.13.6
+@element-plus/icons-vue@^2.3.2
+
+# Vue 3 核心
+vue@^3.5.30
+vue-router@^4.6.4
+pinia@^3.0.4
+
+# HTTP 客户端
+axios@^1.14.0
+
+# 开发依赖（已在 package.json 中）
+# vite, vue-tsc, typescript 等
